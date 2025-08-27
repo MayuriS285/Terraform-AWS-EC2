@@ -1,7 +1,11 @@
 name: Destroy EC2 Instance with Terraform
 
 on:
-  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Provision EC2 Instances with terraform
+    types:
+      - completed
 
 jobs:
   terraform-destroy:
