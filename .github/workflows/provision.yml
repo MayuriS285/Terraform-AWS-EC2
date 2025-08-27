@@ -1,4 +1,4 @@
-name: Provision EC2 Instances with Ke
+name: Provision EC2 Instances with terraform
 
 on:
   push:
